@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <section class="content">
+      <div class="content__container">
+        <div class="content__container__results">
+          <h2 class="content__container__results-title">Your Result</h2>
+            <div class="content__container__results-number">
+              <p class="content__container__results-number-scale"><span>76</span><br>
+                of 100</p>
+            </div>
+          <h2 class="content__container__results-degree">Great</h2>
+          <p class="content__container__results-text">You scored higher than 65% of the people who have taken these tests</p>
+        </div>
+        <div class="content__container__summary">
+            <h2 class="content__container__summary-title">Summary</h2>
+            <div class="summary__parameters">
+            <div class="summary__card">
+              <div class="summary__card__reaction">
+                <div class="summary__card__reaction-description">
+                  <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
+                  <h3 class="description__title">Reaction</h3>
+                </div>
+                <p class="description__text"><strong>80</strong> / 100</p>
+              </div>
+            </div>
+            <div class="summary__card">
+              <div class="summary__card__memory">
+                <div class="summary__card__memory-description">
+                  <img src="./assets/images/icon-memory.svg" alt="memory icon">
+                  <h3 class="description__title">Memory</h3>
+                </div>
+                <p class="description__text"><strong>92</strong> / 100</p>
+              </div>
+            </div>
+            <div class="summary__card">
+              <div class="summary__card__verbal">
+                <div class="summary__card__verbal-description">
+                  <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
+                  <h3 class="description__title">Verbal</h3>
+                </div>
+                <p class="description__text"><strong>61</strong> / 100</p>
+              </div>
+            </div>
+            <div class="summary__card">
+              <div class="summary__card__visual">
+                <div class="summary__card__visual-description">
+                  <img src="./assets/images/icon-visual.svg" alt="visual icon">
+                  <h3 class="description__title">Visual</h3>
+                </div>
+                <p class="description__text"><strong>80</strong> / 100</p>
+              </div>
+            </div>
+          </div>
+          <div class="content__container__summary-button">
+          <a href="#" class="summary-button">Continue</a>
+        </div>
+        </div>
+    </section>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Fábio Lirio</a>.
+  </div>
+</body>
+</html>
