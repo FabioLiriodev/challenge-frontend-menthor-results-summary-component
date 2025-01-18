@@ -46,6 +46,7 @@ font-size: 18px;
 
 
 --font-size-3xl: 4.5rem;
+--font-size-xl: 3rem;
 --font-size-l: 1.77rem;
 --font-size-m: 1.33rem;
 --font-size-b: 1rem;
@@ -59,6 +60,7 @@ font-size: 18px;
 --padding-xm: 2.5rem;  /*45px*/
 --padding-m: 2.25rem; /*40.5px*/
 --padding-i: 2rem; /*36px*/
+--padding-xb: 1.5rem; /*28px*/
 --padding-b: 1.11rem; /*20px*/
 --padding-s: 1rem; /*18px*/
 --padding-xs: 0.75rem; /*13.5px*/
@@ -74,6 +76,7 @@ font-size: 18px;
 --margin-xm: 2.5rem;  /*45px*/
 --margin-m: 2.25rem; /*40.5px*/
 --margin-i: 2rem; /*36px*/
+--margin-xb: 1.5rem; /*28px*/
 --margin-b: 1.11rem; /*20px*/
 --margin-s: 1rem; /*18px*/
 
@@ -86,6 +89,7 @@ font-size: 18px;
 --gap-xm: 2.5rem;  /*45px*/
 --gap-m: 2.25rem; /*40.5px*/
 --gap-i: 2rem; /*36px*/
+--gap-xb: 1.5rem; /*28px*/
 --gap-b: 1.11rem; /*20px*/
 --gap-s: 1rem; /*18px*/
 
@@ -131,6 +135,12 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     background-color: var(--color-White);
+
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }
 
 

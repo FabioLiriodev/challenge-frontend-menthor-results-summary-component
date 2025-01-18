@@ -13,6 +13,12 @@
         width: 50%;
         height: 100%;
         background-color: var(--color-white);
+
+        @media screen and (max-width:768px) {
+        width: 100%;
+        padding: var(--padding-xb);
+             
+         }
     }
 
 .content__container__summary-title {
@@ -20,6 +26,11 @@
     font-weight: var(--font-weight-medium);
     color: var(--color-dark-gray-blue);
     margin-bottom: 25px;
+
+    @media screen and (max-width:768px) {
+        padding-left: var(--padding-xb);
+             
+         }
 }
 
 .summary__parameters {
@@ -27,6 +38,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
 }
 
 .summary__card {
@@ -47,6 +59,12 @@
     padding: 0.5rem;
     width: 16rem;
     height: 3rem;
+
+    @media screen and (max-width:768px) {
+        width: calc(100vw - 60px);
+        padding: var(--padding-xb);
+             
+         }
 }
 
 .summary__card__reaction {
