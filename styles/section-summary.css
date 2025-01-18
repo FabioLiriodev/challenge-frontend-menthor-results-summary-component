@@ -1,0 +1,118 @@
+:root {
+
+    font-size: 18px;
+
+
+
+.content__container__summary {
+        display: flex;
+        flex-direction: column;
+        padding: var(--padding-m) var(--padding-m);
+        border-radius: var(--border-radius-summary);
+        box-shadow: 5px 5px 10px var(--color-pale-blue);
+        width: 50%;
+        height: 100%;
+        background-color: var(--color-white);
+    }
+
+.content__container__summary-title {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-dark-gray-blue);
+    margin-bottom: 25px;
+}
+
+.summary__parameters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.summary__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-b);
+}
+
+.summary__card__reaction,
+.summary__card__memory,
+.summary__card__verbal,
+.summary__card__visual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius-card);
+    padding: 0.5rem;
+    width: 16rem;
+    height: 3rem;
+}
+
+.summary__card__reaction {
+    background-color: var(--color-background-light-red);
+}
+
+.summary__card__memory {
+    background-color: var(--color-background-orangey-yellow);
+}
+
+.summary__card__verbal {
+    background-color: var(--color-background-green-teal);
+}
+
+.summary__card__visual {
+    background-color: var(--color-background-cobalt-blue);
+}
+
+
+.summary__card__reaction-description,
+.summary__card__memory-description,
+.summary__card__verbal-description,
+.summary__card__visual-description {
+    display: flex;
+    gap: 16px;
+}
+
+.summary__card__reaction-description > h3 {
+    color: var(--color-light-red);
+    font-weight: var(--font-weight-medium);
+}
+
+.summary__card__memory-description > h3 {
+    color: var(--color-orangey-yellow);
+    font-weight: var(--font-weight-medium);
+}
+
+.summary__card__verbal-description > h3 {
+    color: var(--color-green-teal);
+    font-weight: var(--font-weight-medium);
+}
+
+.summary__card__visual-description > h3 {
+    color: var(--color-cobalt-blue);
+    font-weight: var(--font-weight-medium);
+}
+
+.content__container__summary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--margin-b);
+    background-color: var(--color-dark-gray-blue);
+    width: 100%;
+    height: 3rem;
+    border-radius: var(--border-radius-button);
+
+
+}
+.summary-button{
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-pale-blue);
+}
+
+.description__text > strong {
+    font-weight: var(--font-weight-extrabold);
+}
+}
