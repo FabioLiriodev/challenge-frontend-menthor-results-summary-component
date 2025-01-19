@@ -9,77 +9,77 @@
   
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <main>
     <section class="content">
       <div class="content__container">
-        <div class="content__container__results">
-          <h2 class="content__container__results-title">Your Result</h2>
-            <div class="content__container__results-number">
-              <p class="content__container__results-number-scale"><span>76</span><br>
+        <div class="results">
+          <h2 class="results__title">Your Result</h2>
+            <div class="results__stats">
+              <p class="results__stats__scale"><span>76</span><br>
                 of 100</p>
             </div>
-          <h2 class="content__container__results-degree">Great</h2>
-          <p class="content__container__results-text">You scored higher than 65% of the people who have taken these tests</p>
+          <h2 class="results__grade">Great</h2>
+          <p class="results__text">You scored higher than 65% of the people who have taken these tests.</p>
         </div>
-        <div class="content__container__summary">
-            <h2 class="content__container__summary-title">Summary</h2>
-            <div class="summary__parameters">
-            <div class="summary__card">
-              <div class="summary__card__reaction">
-                <div class="summary__card__reaction-description">
+        <div class="container__summary">
+            <div class="container__summary__content">
+            <h2 class="summary__title">Summary</h2>
+            <div class="container__summary__parameters">
+                <div class="summary__item">
+              <div class="summary__item__reaction">
+                <div class="item__reaction__description">
                   <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
                   <h3 class="description__title">Reaction</h3>
                 </div>
                 <p class="description__text"><strong>80</strong> / 100</p>
               </div>
             </div>
-            <div class="summary__card">
-              <div class="summary__card__memory">
-                <div class="summary__card__memory-description">
+            <div class="summary__item">
+              <div class="summary__item__memory">
+                <div class="item__memory__description">
                   <img src="./assets/images/icon-memory.svg" alt="memory icon">
                   <h3 class="description__title">Memory</h3>
                 </div>
                 <p class="description__text"><strong>92</strong> / 100</p>
               </div>
             </div>
-            <div class="summary__card">
-              <div class="summary__card__verbal">
-                <div class="summary__card__verbal-description">
+            <div class="summary__item">
+              <div class="summary__item__verbal">
+                <div class="item__verbal__description">
                   <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
                   <h3 class="description__title">Verbal</h3>
                 </div>
                 <p class="description__text"><strong>61</strong> / 100</p>
               </div>
             </div>
-            <div class="summary__card">
-              <div class="summary__card__visual">
-                <div class="summary__card__visual-description">
+            <div class="summary__item">
+              <div class="summary__item__visual">
+                <div class="item__visual__description">
                   <img src="./assets/images/icon-visual.svg" alt="visual icon">
                   <h3 class="description__title">Visual</h3>
                 </div>
                 <p class="description__text"><strong>80</strong> / 100</p>
               </div>
             </div>
+            <div class="summary__button">
+                <a href="#" class="summary__button__link">Continue</a>
+              </div>
           </div>
-          <div class="content__container__summary-button">
-          <a href="#" class="summary-button">Continue</a>
+        </div>
         </div>
         </div>
     </section>
-
   </main>
+  <footer class="footer">
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Fábio Lirio</a>.
+      </div>
+  </footer>
+  
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Fábio Lirio</a>.
-  </div>
 </body>
 </html>
