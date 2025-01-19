@@ -2,129 +2,131 @@
 
     font-size: 18px;
 
+.container__summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: var(--padding-xb);
+    height: 50%;
+    width: 100vw;
+    background-color: var(--color-White);
 
-
-.content__container__summary {
-        display: flex;
-        flex-direction: column;
-        padding: var(--padding-m) var(--padding-m);
-        border-radius: var(--border-radius-summary);
-        box-shadow: 5px 5px 10px var(--color-pale-blue);
+    @media screen and (min-width:767px) {
         width: 50%;
         height: 100%;
-        background-color: var(--color-white);
+        border-radius: var(--border-radius-summary);
+        box-shadow: 5px 5px 10px var(--color-pale-blue);
+        padding: 1.75rem var(--padding-m);
 
-        @media screen and (max-width:768px) {
-        width: 100%;
-        padding: var(--padding-xb);
-             
-         }
     }
+}
 
-.content__container__summary-title {
+.container__summary__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container__summary__parameters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--gap-s);
+}
+
+.summary__title {
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-medium);
     color: var(--color-dark-gray-blue);
-    margin-bottom: 25px;
-
-    @media screen and (max-width:768px) {
-        padding-left: var(--padding-xb);
-             
-         }
+    margin-bottom: var(--margin-b);
 }
 
-.summary__parameters {
+.summary__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-
 }
-
-.summary__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--gap-b);
-}
-
-.summary__card__reaction,
-.summary__card__memory,
-.summary__card__verbal,
-.summary__card__visual {
+.summary__item__reaction,
+.summary__item__memory,
+.summary__item__verbal,
+.summary__item__visual {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: var(--border-radius-card);
     padding: 0.5rem;
-    width: 16rem;
+    width: 81.2vw;
     height: 3rem;
 
-    @media screen and (max-width:768px) {
-        width: calc(100vw - 60px);
-        padding: var(--padding-xb);
-             
-         }
-}
+    @media screen and (min-width:767px) {
+        width: 16rem;
 
-.summary__card__reaction {
+    }
+}
+.summary__item__reaction {
     background-color: var(--color-background-light-red);
 }
 
-.summary__card__memory {
+.summary__item__memory {
     background-color: var(--color-background-orangey-yellow);
 }
 
-.summary__card__verbal {
+.summary__item__verbal {
     background-color: var(--color-background-green-teal);
 }
 
-.summary__card__visual {
+.summary__item__visual {
     background-color: var(--color-background-cobalt-blue);
 }
-
-
-.summary__card__reaction-description,
-.summary__card__memory-description,
-.summary__card__verbal-description,
-.summary__card__visual-description {
+.item__reaction__description,
+.item__memory__description,
+.item__verbal__description,
+.item__visual__description {
     display: flex;
     gap: 16px;
 }
 
-.summary__card__reaction-description > h3 {
+.item__reaction__description > h3 {
     color: var(--color-light-red);
     font-weight: var(--font-weight-medium);
 }
 
-.summary__card__memory-description > h3 {
+.item__memory__description > h3 {
     color: var(--color-orangey-yellow);
     font-weight: var(--font-weight-medium);
 }
 
-.summary__card__verbal-description > h3 {
+.item__verbal__description > h3 {
     color: var(--color-green-teal);
     font-weight: var(--font-weight-medium);
 }
 
-.summary__card__visual-description > h3 {
+.item__visual__description > h3 {
     color: var(--color-cobalt-blue);
     font-weight: var(--font-weight-medium);
 }
 
-.content__container__summary-button {
+.summary__button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: var(--margin-b);
     background-color: var(--color-dark-gray-blue);
-    width: 100%;
+    width: 81.2vw;
     height: 3rem;
     border-radius: var(--border-radius-button);
+    margin-top: 15px;
+
+    @media screen and (min-width:767px) {
+        width: 18rem;
+        margin-top: 10px;
+    }
 
 
 }
-.summary-button{
+.summary__button__link{
     text-align: center;
     text-decoration: none;
     color: var(--color-pale-blue);
