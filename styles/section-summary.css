@@ -132,6 +132,12 @@
     color: var(--color-pale-blue);
 }
 
+.summary__button:hover,
+.summary__button:focus {
+    cursor: pointer;
+    background: var(--background-results);
+}
+
 .description__text > strong {
     font-weight: var(--font-weight-extrabold);
 }
