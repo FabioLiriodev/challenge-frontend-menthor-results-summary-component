@@ -10,11 +10,12 @@
     padding: var(--padding-xb);
     height: 50%;
     width: 100vw;
+    box-sizing: border-box;
     background-color: var(--color-White);
 
     @media screen and (min-width:767px) {
-        width: 50%;
-        height: 100%;
+        width: 365px;        
+        height: 512px;
         border-radius: var(--border-radius-summary);
         box-shadow: 5px 5px 10px var(--color-pale-blue);
         padding: 1.75rem var(--padding-m);
@@ -120,8 +121,8 @@
     margin-top: 15px;
 
     @media screen and (min-width:767px) {
-        width: 18rem;
-        margin-top: 10px;
+        width: 17rem;
+        margin-top: 0;
     }
 
 
