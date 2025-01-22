@@ -42,16 +42,24 @@ The next step was the development of a semantic HTML structure to obtain a resul
 
 Then, the developers choose to separate main sections CSS files to ease the documentation and maintainance of codes.
 
-In addition, after mobile-first HTML development the web document was adapted by medium (tablet 768px x 768px) and large screens (1440px x 1050px), even if the challenge provided only 1440px x 1050px screen size design.  
+In addition, after mobile-first HTML development the web document was adapted by medium (tablet 768px x 768px) and large screens (1440px x 1050px), even if the challenge provided only 1440px x 1050px screen size design.
 
-## Deploying your project
+## Design models
 
-## Submitting your solution
+The provided design model by Frontend Mentor for small (375px) and large (1440px) devices are demonstrated below:
 
-## Sharing your solution
+![Result Summary Component - mobile devices](<mobile desktop.png>)
 
+![Result Summary Component - large screen devices](desktop-devices.png)
 
-## Got feedback for us?
+## 🚀 My solution 🚀
 
+The first-step of developing result summary component was determinate how containers structure could be made to facilitate the correct alignment of elements on html document.
 
-**Have fun building!** 🚀
+The developer choose to structure the elements on project using flexbox properties because of its efficience on adjust of position of texts, images and layers.
+
+The HTML strucuture contains semantic HTML tags to assure good programming practices, but considering that one part of data will be provided by a dynamic JSON. In addition, css files were created to catalog main stelization specifications of project (style.css) and other two css files to each section of index.html file (section-results.css and section-summary.css). This strategy was selected because of the better understanding of variables and the ease of refactor and maintanance of codes.
+
+The style.css was made with root specifications provided by the challenge on README-template.md and styel-guide.md. The main CSS file also contains style applications of the main sections and containers of index.html file.
+
+The second-step was to create a javascript file (main.js) to attribute dynamic data from a JSON for the summary section categories, icons and values. After the compreehension of programming logic applied to the development, the JSON return was made successfully and specific stilization styles were applied on each individual element by nth-child() properties.
