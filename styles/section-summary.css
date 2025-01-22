@@ -50,10 +50,49 @@
     align-items: center;
     gap: 16px;
 }
-.summary__item__reaction,
-.summary__item__memory,
-.summary__item__verbal,
-.summary__item__visual {
+
+#data .summary__item:nth-child(1) {
+    background-color: var(--color-background-light-red);
+    border-radius: var(--border-radius-card);
+}
+
+#data .summary__item:nth-child(1) h3 {
+    color: var(--color-light-red);
+    font-weight: var(--font-weight-medium);
+}
+
+#data .summary__item:nth-child(2) {
+    background-color: var(--color-background-orangey-yellow);
+    border-radius: var(--border-radius-card);
+}
+
+#data .summary__item:nth-child(2) h3 {
+    color: var(--color-orangey-yellow);
+    font-weight: var(--font-weight-medium);
+}
+
+#data .summary__item:nth-child(3) {
+    background-color: var(--color-background-green-teal);
+    border-radius: var(--border-radius-card);
+
+}
+
+#data .summary__item:nth-child(3) h3 {
+    color: var(--color-green-teal);
+    font-weight: var(--font-weight-medium);
+}
+
+#data .summary__item:nth-child(4) {
+    background-color: var(--color-background-cobalt-blue);
+    border-radius: var(--border-radius-card);
+}
+
+#data .summary__item:nth-child(4) h3 {
+    color: var(--color-cobalt-blue);
+    font-weight: var(--font-weight-medium);
+}
+
+.summary__item__info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,45 +106,29 @@
 
     }
 }
-.summary__item__reaction {
-    background-color: var(--color-background-light-red);
-}
 
-.summary__item__memory {
-    background-color: var(--color-background-orangey-yellow);
-}
 
-.summary__item__verbal {
-    background-color: var(--color-background-green-teal);
-}
-
-.summary__item__visual {
-    background-color: var(--color-background-cobalt-blue);
-}
-.item__reaction__description,
-.item__memory__description,
-.item__verbal__description,
-.item__visual__description {
+.item__info__description {
     display: flex;
     gap: 16px;
 }
 
-.item__reaction__description > h3 {
+.item__info__description > h3 {
     color: var(--color-light-red);
     font-weight: var(--font-weight-medium);
 }
 
-.item__memory__description > h3 {
+.item__info__description > h3 {
     color: var(--color-orangey-yellow);
     font-weight: var(--font-weight-medium);
 }
 
-.item__verbal__description > h3 {
+.item__info__description > h3 {
     color: var(--color-green-teal);
     font-weight: var(--font-weight-medium);
 }
 
-.item__visual__description > h3 {
+.item__info__description > h3 {
     color: var(--color-cobalt-blue);
     font-weight: var(--font-weight-medium);
 }

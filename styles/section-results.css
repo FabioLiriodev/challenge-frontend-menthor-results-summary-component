@@ -13,7 +13,7 @@
     border-bottom-right-radius: var(--border-radius-results);
     border-bottom-left-radius: var(--border-radius-results);
     background: var(--background-results);
-    padding: var(--padding-xb) var(--padding-2xl) var(--padding-m) var(--padding-2xl);
+    padding: var(--padding-xb) var(--padding-xm) var(--padding-m) var(--padding-xm);
 
     @media screen and (min-width:767px) {
         width: 365px;        
@@ -58,7 +58,6 @@
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-extrabold);
     color: var(--color-White);
-    margin-bottom: var(--margin-s);
 
     @media screen and (min-width:767px) {
         font-size: var(--font-size-3xl);
@@ -79,11 +78,14 @@
 
 .results__text {
     color: var(--color-light-lavender);
-    padding: 0 var(--padding-m);
+}
 
-    @media screen and (min-width:767px) {
-        padding: 0;
-        }
+.results__text > br {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+    display: block;
+    }
 }
 
 
